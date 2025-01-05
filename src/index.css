@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Styles */
+@layer components {
+  .nav-link {
+    @apply relative text-gray-900 font-normal transition-all duration-700 no-underline;
+  }
+
+  .nav-link::after {
+    content: "";
+    @apply absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-700;
+  }
+
+  .nav-link:hover {
+    @apply text-primary no-underline;
+  }
+
+  .nav-link:hover::after {
+    @apply w-full;
+  }
+
+  .btn-grad {
+    @apply text-white font-medium rounded-xl transition-all ease-in-out duration-500 shadow-lg cursor-pointer;
+    background-image: linear-gradient(
+      to right,
+      theme('colors.gradientStart') 0%,
+      theme('colors.gradientMiddle') 51%,
+      theme('colors.gradientEnd') 100%
+    );
+    background-size: 200% auto;
+  }
+
+  .btn-grad:hover {
+    @apply text-white;
+    background-position: right center;
+  }
+
+  .btn-grad-large {
+    @apply px-6 py-3 text-lg;
+  }
+
+  .btn-grad-small {
+    @apply px-4 py-2 text-sm;
+  }
+}

@@ -1,0 +1,46 @@
+                         /*** Custom FlipCard Styles ****/
+.flip-card {
+    background-color: transparent;
+    width: 18rem;  
+    height: 24rem;
+    perspective: 1000px;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s ease-in-out;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front,
+  .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 0.5rem;
+    backface-visibility: hidden; 
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .flip-card-front {
+    background: linear-gradient(135deg, #ffffff, #f7f7f7);
+    color: black;
+  }
+  
+  .flip-card-back {
+    background-color: #f8802a;
+    color: white;
+    transform: rotateY(180deg); 
+  }
+  
