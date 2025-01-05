@@ -9,6 +9,11 @@ The project is deployed on Vercel and accessible at:
 
 ---
 
+## Project Walkthrough
+
+Watch the detailed video walkthrough of the application for a comprehensive understanding of its features and functionalities:  
+[Watch the Loom Video](https://www.loom.com/share/4b2fdf3d4cd44b0c88c37bd758dbaf50?reminderToRecord=saveMeetingTime)
+
 ## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
